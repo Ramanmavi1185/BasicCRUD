@@ -1,11 +1,11 @@
 ﻿@model _200520823Midterm.Models.Employee
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Create an Employee";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Create</h1>
+<h1>@ViewData["Title"]</h1>
 
 <h4>Employee</h4>
 <hr />
@@ -13,42 +13,42 @@
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
+            <div class="form-group my-3">
                 <label asp-for="ParentId" class="control-label"></label>
                 <input asp-for="ParentId" class="form-control" />
                 <span asp-validation-for="ParentId" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="form-group my-3">
                 <label asp-for="MiddleName" class="control-label"></label>
                 <input asp-for="MiddleName" class="form-control" />
                 <span asp-validation-for="MiddleName" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="form-group my-3">
                 <label asp-for="CalenderDate" class="control-label"></label>
                 <input asp-for="CalenderDate" class="form-control" />
                 <span asp-validation-for="CalenderDate" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="form-group my-3">
                 <label asp-for="Salary" class="control-label"></label>
                 <input asp-for="Salary" class="form-control" />
                 <span asp-validation-for="Salary" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="form-group my-3">
                 <label asp-for="Force" class="control-label"></label>
                 <input asp-for="Force" class="form-control" />
                 <span asp-validation-for="Force" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="form-group my-3">
                 <label asp-for="Frequency" class="control-label"></label>
                 <input asp-for="Frequency" class="form-control" />
                 <span asp-validation-for="Frequency" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="form-group my-3">
                 <label asp-for="LastUpdated" class="control-label"></label>
                 <input asp-for="LastUpdated" class="form-control" />
                 <span asp-validation-for="LastUpdated" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="form-group my-3">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
         </form>

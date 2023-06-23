@@ -1,11 +1,11 @@
 ﻿@model _200520823Midterm.Models.Company
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Edit Company";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Edit</h1>
+<h1>@ViewData["Title"]</h1>
 
 <h4>Company</h4>
 <hr />
@@ -14,37 +14,37 @@
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Id" />
-            <div class="form-group">
+            <div class="form-group my-3">
                 <label asp-for="Domain" class="control-label"></label>
                 <input asp-for="Domain" class="form-control" />
                 <span asp-validation-for="Domain" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="form-group my-3">
                 <label asp-for="Anniversay" class="control-label"></label>
                 <input asp-for="Anniversay" class="form-control" />
                 <span asp-validation-for="Anniversay" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="form-group my-3">
                 <label asp-for="Percentage" class="control-label"></label>
                 <input asp-for="Percentage" class="form-control" />
                 <span asp-validation-for="Percentage" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="form-group my-3">
                 <label asp-for="Position" class="control-label"></label>
                 <input asp-for="Position" class="form-control" />
                 <span asp-validation-for="Position" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="form-group my-3">
                 <label asp-for="Organization" class="control-label"></label>
                 <input asp-for="Organization" class="form-control" />
                 <span asp-validation-for="Organization" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="form-group my-3">
                 <label asp-for="Place" class="control-label"></label>
                 <input asp-for="Place" class="form-control" />
                 <span asp-validation-for="Place" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="form-group my-3">
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>
         </form>
